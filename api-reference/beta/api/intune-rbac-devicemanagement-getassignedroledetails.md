@@ -4,6 +4,7 @@ description: "Retrieves the assigned role definitions and role assignments of th
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # getAssignedRoleDetails function
@@ -15,13 +16,13 @@ ms.prod: "Intune"
 Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -71,7 +72,6 @@ Content-Length: 245
   }
 }
 ```
-
 
 
 

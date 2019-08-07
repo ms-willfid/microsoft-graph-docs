@@ -16,13 +16,13 @@ doc_type: apiPageType
 List properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3663
+Content-Length: 3711
 
 {
   "value": [
@@ -152,12 +152,12 @@ Content-Length: 3663
       "classroomAppForceUnpromptedScreenObservation": true,
       "classroomForceAutomaticallyJoinClasses": true,
       "classroomForceRequestPermissionToLeaveClasses": true,
-      "classroomForceUnpromptedAppAndDeviceLock": true
+      "classroomForceUnpromptedAppAndDeviceLock": true,
+      "iCloudBlockActivityContinuation": true
     }
   ]
 }
 ```
-
 
 
 

@@ -1,10 +1,10 @@
 ---
 title: "enablement enum type"
-description: "Describes the enablement enumeration of the Microsoft Graph API for Intune, which supports multiple workflows."
-author: "tfitzmac"
+description: "Possible values of a property"
+author: "rolyon"
 localization_priority: Normal
-doc_type: enumPageType
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # enablement enum type
@@ -13,7 +13,7 @@ ms.prod: "Intune"
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Possible values of a property
+Not yet documented
 
 ## Members
 |Member|Value|Description|

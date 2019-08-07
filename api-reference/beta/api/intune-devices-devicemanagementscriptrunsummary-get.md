@@ -16,13 +16,13 @@ doc_type: apiPageType
 Read properties and relationships of the [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 259
+Content-Length: 356
 
 {
   "value": {
@@ -69,12 +69,14 @@ Content-Length: 259
     "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
     "successDeviceCount": 2,
     "errorDeviceCount": 0,
+    "compliantDeviceCount": 4,
+    "notCompliantDeviceCount": 7,
+    "pendingDeviceCount": 2,
     "successUserCount": 0,
     "errorUserCount": 14
   }
 }
 ```
-
 
 
 

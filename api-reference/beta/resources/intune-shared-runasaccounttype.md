@@ -1,22 +1,23 @@
 ---
-title: "runAsAccountType enum type"
-description: "Describes the runAsAccountType enum of the Microsoft Graph API for Intune, which supports multiple workflows."
-author: "tfitzmac"
+title: "enablement enum type"
+description: "Possible values of a property"
+author: "rolyon"
 localization_priority: Normal
-doc_type: enumPageType
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
-# runAsAccountType enum type
+# enablement enum type
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Indicates execution context of a device management script or an app.
+Not yet documented
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|system|0|System context|
-|user|1|User context|
+|notConfigured|0|Device default value, no intent.|
+|enabled|1|Enables the setting on the device.|
+|disabled|2|Disables the setting on the device.|

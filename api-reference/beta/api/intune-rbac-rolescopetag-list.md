@@ -16,13 +16,13 @@ doc_type: apiPageType
 List properties and relationships of the [roleScopeTag](../resources/intune-rbac-rolescopetag.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 231
+Content-Length: 257
 
 {
   "value": [
@@ -67,12 +67,12 @@ Content-Length: 231
       "@odata.type": "#microsoft.graph.roleScopeTag",
       "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
       "displayName": "Display Name value",
-      "description": "Description value"
+      "description": "Description value",
+      "isBuiltIn": true
     }
   ]
 }
 ```
-
 
 
 
