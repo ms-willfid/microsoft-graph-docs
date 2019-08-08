@@ -1,23 +1,22 @@
 ---
-title: "enablement enum type"
-description: "Possible values of a property"
+title: "runAsAccountType enum type"
+description: "Indicates the type of execution context the object runs in."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
-# enablement enum type
+# runAsAccountType enum type
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Indicates the type of execution context the object runs in.
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|notConfigured|0|Device default value, no intent.|
-|enabled|1|Enables the setting on the device.|
-|disabled|2|Disables the setting on the device.|
+|system|0|System context|
+|user|1|User context|
