@@ -7,6 +7,80 @@ ms.prod: ""
 author: ""
 ---
 
+### conditionalAccessPolicyState values
+
+| Member |
+|:-------|
+| Enabled |
+| Disabled |
+| EnabledForReportingButNotEnforced |
+
+### cloudAppSecuritySessionControlType values
+
+| Member |
+|:-------|
+| McasConfigured |
+| MonitorOnly |
+| BlockDownloads |
+| ProtectDownloads |
+
+### persistentBrowserSessionMode values
+
+| Member |
+|:-------|
+| always |
+| never |
+
+### signinFrequencyType values
+
+| Member |
+|:-------|
+| Days |
+| Hours |
+
+### riskLevel values
+
+| Member |
+|:-------|
+| High |
+| Medium |
+| Low |
+| None |
+
+### conditionalAccessClientApps values
+
+| Member |
+|:-------|
+| Browser |
+| Modern |
+| EasSupported |
+| EasUnsupported |
+| Other |
+
+### dayOfWeek values
+
+| Member |
+|:-------|
+| Sunday |
+| Monday |
+| Tuesday |
+| Wednesday |
+| Thursday |
+| Friday |
+| Saturday |
+
+
+### conditionalAccessPlatforms values
+
+| Member |
+|:-------|
+| All |
+| Android |
+| Ios |
+| Windows |
+| WindowsPhone |
+| MacOs |
+
 ### analyticsActivityType values
 
 | Member
