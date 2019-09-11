@@ -1,6 +1,6 @@
 ---
 title: "Get conditionalAccessPolicies"
-description: "Retrieve the properties of a Conditional Access Policy."
+description: "Retrieve the properties of a conditionalAccessPolicies object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md).
+Retrieve the properties of a [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) object.
 
 ## Permissions
 

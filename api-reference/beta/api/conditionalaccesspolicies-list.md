@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve all [conditionAccessPolicies](../resources/ConditionalAccessPolicies.md) objects in the directory.
+Retrieve all [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) objects in the directory.
 
 ## Permissions
 
@@ -76,8 +76,8 @@ Content-type: application/json
       "displayName": "Test Policy Sample",
       "createdDateTime": null,
       "modifiedDateTime": null,
-      "state": "enabled",
-		}
+      "state": "enabled"
+    }
   ]
 }
 ```
