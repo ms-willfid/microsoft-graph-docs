@@ -79,29 +79,29 @@ Content-type: application/json
     "deviceStates": null,
     "applications": {
       "includeApplications": [
-	    "None"
-	  ],
-	  "excludeApplications": [],
-	  "includeAuthenticationContext": []
+        "None"
+      ],
+      "excludeApplications": [],
+      "includeAuthenticationContext": []
     },
     "users": {
-	  "includeUsers": [
-	    "None"
-	  ],
-	  "excludeUsers": [],
+      "includeUsers": [
+        "None"
+      ],
+      "excludeUsers": [],
       "includeGroups": [],
-	  "excludeGroups": [],
+      "excludeGroups": [],
       "includeRoles": [],
-	  "excludeRoles": []
+      "excludeRoles": []
     }
   },
   "grantControls": {
-	"operator": "OR",
-	"builtInControls": [
-	  "block"
-	],
-	"customAuthenticationFactors": [],
-	"termsOfUse": []
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": []
   }
 }
 ```
