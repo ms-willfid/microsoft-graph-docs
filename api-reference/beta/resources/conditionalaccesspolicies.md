@@ -19,8 +19,8 @@ Represents Azure Active Directory conditional access policies. Conditional acces
 |:------ |:----------- |:----------- |
 | [List conditionalAccessPolicies](../api/conditionalaccesspolicies-list.md) | conditionalAccessPolicies collection | Get all of the conditionalAccessPolicies objects in the organization. |
 | [Get conditionalAccessPolicies](../api/conditionalaccesspolicies-get.md) | conditionalAccessPolicies | Read the properties and relationships of a conditionalAccessPolicies object. |
-| [Create conditionalAccessPolicy](../api/conditionalAccessPolicies-post.md) | conditionalAccessPolicies | Create a new conditionalAccessPolicies object. |
-| [Update conditionalAccessPolicy](../api/conditionalAccessPolicies-update.md)| None | Update a conditionalAccessPolicies object. |
+| [Create conditionalAccessPolicy](../api/conditionalaccesspolicies-post-conditionalaccesspolicies.md) | conditionalAccessPolicies | Create a new conditionalAccessPolicies object. |
+| [Update conditionalAccessPolicy](../api/conditionalaccesspolicies-update.md)| None | Update a conditionalAccessPolicies object. |
 | [Delete conditionalAccessPolicy](../api/conditionalaccesspolicies-delete.md)| None | Delete a conditionalAccessPolicies object. |
 
 ## Properties

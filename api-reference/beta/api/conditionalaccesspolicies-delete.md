@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Delete Policy
 
-[!INCLUDE [beta-disclaimer](../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [conditionalAccessPolicies](../resources/ConditionalAccessPolicies.md) object.
 

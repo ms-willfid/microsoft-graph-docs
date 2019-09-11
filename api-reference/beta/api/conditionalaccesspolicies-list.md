@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List conditionalAccessPolicies
 
-[!INCLUDE [beta-disclaimer](../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve all [conditionAccessPolicies](../resources/ConditionalAccessPolicies.md) objects in the directory.
 

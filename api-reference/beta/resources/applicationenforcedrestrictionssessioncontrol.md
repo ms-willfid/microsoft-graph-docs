@@ -28,7 +28,7 @@ The following is the JSON representation of the resource.
 
 ```json
 {
-    null
+    "unknown": null
 }
 ```
 

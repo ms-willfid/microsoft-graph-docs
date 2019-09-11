@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Get conditionalAccessPolicies
 
-[!INCLUDE [beta-disclaimer](../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md).
 

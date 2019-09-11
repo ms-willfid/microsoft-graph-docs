@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Create conditionalAccessPolicies
 
-[!INCLUDE [beta-disclaimer](../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [conditionalAccessPolicies](../resources/conditionalaccesspolicies.md) object by specifying display name, policy type, and policy description.
 

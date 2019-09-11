@@ -17,7 +17,7 @@ Represents a complex type of session controls that is enforced after sign-in.
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| `applicationEnforcedRestrictions` | [applicationEnforcedRestrictionsSessionControl](applicationEnforcedRestrictionsSessionControl.md) | Session control to enforce application restrictions. |
+| `applicationEnforcedRestrictions` | [applicationEnforcedRestrictionsSessionControl](applicationenforcedrestrictionssessioncontrol.md) | Session control to enforce application restrictions. |
 | `persistentBrowser` | [persistentBrowserSessionControl](persistentbrowsersessioncontrol.md) | Session control to define whether to persist cookies or not. |
 | `cloudAppSecurity` | [cloudAppSecuritySessionControl](cloudappsecuritysessioncontrol.md) | Session control to apply cloud app security.|
 | `signInFrequency` | [signInFrequencySessionControl](signinfrequencysessioncontrol.md)| Session control to enforce signin frequency.|
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "applicationEnforcedRestrictions": { "@odata.type": "microsoft.graph.applicationenforcedrestrictionssessioncontrol" },
   "persistentBrowser": { "@odata.type": "microsoft.graph.persistentbrowsersessioncontrol" },
   "cloudAppSecurity": { "@odata.type": "microsoft.graph.cloudappsecuritysessioncontrol" },
-  "signInFrequency": { "@odata.type": "microsoft.graph.signInfrequencysessioncontrol" }
+  "signInFrequency": { "@odata.type": "microsoft.graph.signinfrequencysessioncontrol" }
 }
 ```
 

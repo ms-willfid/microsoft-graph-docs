@@ -4,8 +4,20 @@ description: "Microsoft Graph enumeration values"
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ""
-author: ""
+author: "davidmu1"
 ---
+
+### conditionalAccessGrantControl
+| Member |
+|:-------|
+| Block |
+| Mfa |
+| CompliantDevice |
+| DomainJoinedDevice |
+| ApprovedApplication |
+| CompliantApplication |
+| FederatedMfa |
+| FederatedCertAuth |
 
 ### conditionalAccessPolicyState values
 

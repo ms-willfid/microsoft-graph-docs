@@ -29,7 +29,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "optionalProperties": [
     "timeZone",
-    "startDateTime".
+    "startDateTime",
     "endDateTime"
   ],
   "@odata.type": "microsoft.graph.conditionalaccesstimerange"

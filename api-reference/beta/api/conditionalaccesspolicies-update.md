@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Update conditionalAccessPolicies
 
-[!INCLUDE [beta-disclaimer](../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update properties in a [conditionalAccessPolicies](../resources/ConditionalAccessPolicies.md) object.
 
