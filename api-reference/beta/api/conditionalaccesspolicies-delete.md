@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Delete Policy
+# Delete conditionalAccessPolicies
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

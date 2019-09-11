@@ -7986,7 +7986,7 @@
           href: api/conditionalaccesspolicies-list.md
         - name: Get conditionalAccessPolicies
           href: api/conditionalaccesspolicies-get.md
-        - name: Create conditionalAccessPolicies.md
+        - name: Create conditionalAccessPolicies
           href: api/conditionalaccesspolicies-post-conditionalaccesspolicies.md
         - name: Delete conditionalAccessPolicies
           href: api/conditionalaccesspolicies-delete.md
