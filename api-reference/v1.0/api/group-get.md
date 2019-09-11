@@ -110,6 +110,7 @@ Content-type: application/json
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": null,
     "mail": "library2@contoso.com",
     "mailEnabled": true,
     "mailNickname": "library",

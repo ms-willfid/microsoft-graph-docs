@@ -13,6 +13,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2019
 
+### Identity and access (Azure AD)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added new property **isAssignableToRole** to [group](/graph/api/resources/group?view=graph-rest-beta).|
+| Addition | v1.0 | Added new property **isAssignableToRole** to [group](/graph/api/resources/group?view=graph-rest-1.0).|
+
 ### Users | Outlook settings
 
 | **Change type** | **Version** | **Description**                  |

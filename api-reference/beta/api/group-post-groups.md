@@ -49,6 +49,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
+| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
@@ -101,6 +102,7 @@ Content-length: 244
   "groupTypes": [
     "Unified"
   ],
+  "isAssignableToRole": true,
   "mailEnabled": true,
   "mailNickname": "golfassist",
   "securityEnabled": false
@@ -148,6 +150,7 @@ Content-type: application/json
 	 "groupTypes": [
 	     "Unified"
 	 ],
+   "isAssignableToRole": true,
 	 "mail": "golfassist@contoso.com",
 	 "mailEnabled": true,
 	 "mailNickname": "golfassist",
@@ -193,6 +196,7 @@ Content-Type: application/json
   "groupTypes": [
     "Unified"
   ],
+  "isAssignableToRole": true,
   "mailEnabled": true,
   "mailNickname": "operations2019",
   "securityEnabled": false,
@@ -248,6 +252,7 @@ Content-type: application/json
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": true,
     "mail": "operations2019@contoso.com",
     "mailEnabled": true,
     "mailNickname": "operations2019",
