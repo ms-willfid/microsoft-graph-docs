@@ -7,7 +7,8 @@ ms.prod: ""
 author: "davidmu1"
 ---
 
-### conditionalAccessGrantControl
+### conditionalAccessGrantControl values
+
 | Member |
 |:-------|
 | Block |
