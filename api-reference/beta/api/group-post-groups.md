@@ -288,7 +288,7 @@ Content-Type: application/json
   ],
   "isAssignableToRole": true,
   "mailEnabled": true,
-  "securityEnabled": true
+  "securityEnabled": true,
   "mailNickname": "contosohelpdeskadministrators",
   "visibility" : "Private"
 }
