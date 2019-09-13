@@ -310,6 +310,8 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create_role_enabled_group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
+
 > **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values.
 
 #### Response
