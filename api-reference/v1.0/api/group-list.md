@@ -127,7 +127,7 @@ Content-type: application/json
       "onPremisesLastSyncDateTime": null,
       "onPremisesSecurityIdentifier": null,
       "onPremisesSyncEnabled": null,
-      "preferredDataLocation": "CAN",\
+      "preferredDataLocation": "CAN",
       "proxyAddresses": [
         "smtp:golfassist@contoso.onmicrosoft.com",
         "SMTP:golfassist@contoso.com"
