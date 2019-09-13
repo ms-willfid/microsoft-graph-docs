@@ -281,8 +281,8 @@ POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
 {
-  "description": "This group is assigned to Helpdesk Administrator built-in role of Azure AD.",
-  "displayName": "Contoso_HelpdeskAdministrators",
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
   "groupTypes": [
     "Unified"
   ],
@@ -317,15 +317,15 @@ Content-type: application/json
   "classification": null,
   "createdDateTime": "2018-12-27T22:17:07Z",
   "creationOptions": [],
-  "description": "Group with designated owner and members",
-  "displayName": "Operations group",
+  "description": "Group assignable to a role",
+  "displayName": "Role assignable group",
   "groupTypes": [
     "Unified"
   ],
   "isAssignableToRole": true,
   "mail": "operations2019@contoso.com",
   "mailEnabled": true,
-  "mailNickname": "operations2019",
+  "mailNickname": "contosohelpdeskadministrators",
   "onPremisesLastSyncDateTime": null,
   "onPremisesSecurityIdentifier": null,
   "onPremisesSyncEnabled": null,
