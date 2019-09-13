@@ -46,7 +46,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Optional. |
+| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
@@ -97,7 +97,6 @@ Content-length: 244
   "groupTypes": [
     "Unified"
   ],
-  "isAssignableToRole": true,
   "mailEnabled": true,
   "mailNickname": "library",
   "securityEnabled": false
@@ -138,33 +137,33 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
-	  "deletedDateTime": null,
-	  "classification": null,
-	  "createdDateTime": "2018-12-22T00:51:37Z",
-	  "creationOptions": [],
-	  "description": "Self help community for library",
-	  "displayName": "Library Assist",
-	  "groupTypes": [
-	      "Unified"
-	  ],
-    "isAssignableToRole": true,
-	  "mail": "library7423@contoso.com",
-	  "mailEnabled": true,
-	  "mailNickname": "library",
-	  "onPremisesLastSyncDateTime": null,
-	  "onPremisesSecurityIdentifier": null,
-	  "onPremisesSyncEnabled": null,
-	  "preferredDataLocation": "CAN",
-	  "proxyAddresses": [
-	      "SMTP:library7423@contoso.com"
-	  ],
-	  "renewedDateTime": "2018-12-22T00:51:37Z",
-	  "resourceBehaviorOptions": [],
-	  "resourceProvisioningOptions": [],
-	  "securityEnabled": false,
-	  "visibility": "Public",
-	  "onPremisesProvisioningErrors": []
+  "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-22T00:51:37Z",
+  "creationOptions": [],
+  "description": "Self help community for library",
+  "displayName": "Library Assist",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": null,
+  "mail": "library7423@contoso.com",
+  "mailEnabled": true,
+  "mailNickname": "library",
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "proxyAddresses": [
+    "SMTP:library7423@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-22T00:51:37Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "visibility": "Public",
+  "onPremisesProvisioningErrors": []
 }
 ```
 
@@ -190,7 +189,6 @@ Content-Type: application/json
   "groupTypes": [
     "Unified"
   ],
-  "isAssignableToRole": true,
   "mailEnabled": true,
   "mailNickname": "operations2019",
   "securityEnabled": false,
@@ -239,34 +237,109 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
-    "id": "502df398-d59c-469d-944f-34a50e60db3f",
-    "deletedDateTime": null,
-    "classification": null,
-    "createdDateTime": "2018-12-27T22:17:07Z",
-    "creationOptions": [],
-    "description": "Group with designated owner and members",
-    "displayName": "Operations group",
-    "groupTypes": [
-        "Unified"
-    ],
-    "isAssignableToRole": true,
-    "mail": "operations2019@contoso.com",
-    "mailEnabled": true,
-    "mailNickname": "operations2019",
-    "onPremisesLastSyncDateTime": null,
-    "onPremisesSecurityIdentifier": null,
-    "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "CAN",
-    "proxyAddresses": [
-        "SMTP:operations2019@contoso.com"
-    ],
-    "renewedDateTime": "2018-12-27T22:17:07Z",
-    "resourceBehaviorOptions": [],
-    "resourceProvisioningOptions": [],
-    "securityEnabled": false,
-    "visibility": "Public",
-    "onPremisesProvisioningErrors": []
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+  "id": "502df398-d59c-469d-944f-34a50e60db3f",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-27T22:17:07Z",
+  "creationOptions": [],
+  "description": "Group with designated owner and members",
+  "displayName": "Operations group",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": null,
+  "mail": "operations2019@contoso.com",
+  "mailEnabled": true,
+  "mailNickname": "operations2019",
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "proxyAddresses": [
+    "SMTP:operations2019@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-27T22:17:07Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "visibility": "Public",
+  "onPremisesProvisioningErrors": []
+}
+```
+
+### Example 3: Create a group that can be assigned to an Azure AD role
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_role_enabled_group"
+}-->
+``` http
+POST https://graph.microsoft.com/beta/groups
+Content-Type: application/json
+
+{
+  "description": "This group is assigned to Helpdesk Administrator built-in role of Azure AD.",
+  "displayName": "Contoso_HelpdeskAdministrators",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mailEnabled": true,
+  "securityEnabled": true
+  "mailNickname": "contosohelpdeskadministrators",
+  "visibility" : "Private"
+}
+```
+
+> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values.
+
+#### Response
+
+The following is an example of a successful response. It includes only default properties.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_role_enabled_group"
+} -->
+``` http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+  "id": "502df398-d59c-469d-944f-34a50e60db3f",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-27T22:17:07Z",
+  "creationOptions": [],
+  "description": "Group with designated owner and members",
+  "displayName": "Operations group",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": true,
+  "mail": "operations2019@contoso.com",
+  "mailEnabled": true,
+  "mailNickname": "operations2019",
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "proxyAddresses": [
+    "SMTP:operations2019@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-27T22:17:07Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": true,
+  "visibility": "Private",
+  "onPremisesProvisioningErrors": []
 }
 ```
 

@@ -100,34 +100,34 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
-    "deletedDateTime": null,
-    "classification": null,
-    "createdDateTime": "2018-12-22T00:51:37Z",
-    "creationOptions": [],
-    "description": "Self help community for library",
-    "displayName": "Library Assist",
-    "groupTypes": [
-        "Unified"
-    ],
-    "isAssignableToRole": null,
-    "mail": "library2@contoso.com",
-    "mailEnabled": true,
-    "mailNickname": "library",
-    "onPremisesLastSyncDateTime": null,
-    "onPremisesSecurityIdentifier": null,
-    "onPremisesSyncEnabled": null,
-    "preferredDataLocation": "CAN",
-    "proxyAddresses": [
-        "smtp:library7423@contoso.com",
-        "SMTP:library2@contoso.com"
-    ],
-    "renewedDateTime": "2018-12-22T00:51:37Z",
-    "resourceBehaviorOptions": [],
-    "resourceProvisioningOptions": [],
-    "securityEnabled": false,
-    "visibility": "Public",
-    "onPremisesProvisioningErrors": []
+  "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-22T00:51:37Z",
+  "creationOptions": [],
+  "description": "Self help community for library",
+  "displayName": "Library Assist",
+  "groupTypes": [
+    "Unified"
+  ],
+  "isAssignableToRole": null,
+  "mail": "library2@contoso.com",
+  "mailEnabled": true,
+  "mailNickname": "library",
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "proxyAddresses": [
+    "smtp:library7423@contoso.com",
+    "SMTP:library2@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-22T00:51:37Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "visibility": "Public",
+  "onPremisesProvisioningErrors": []
 }
 ```
 
@@ -184,12 +184,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
-    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
-    "allowExternalSenders": false,
-    "autoSubscribeNewMembers": false,
-    "isSubscribedByMail": false,
-    "unseenCount": 0
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+  "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+  "allowExternalSenders": false,
+  "autoSubscribeNewMembers": false,
+  "isSubscribedByMail": false,
+  "unseenCount": 0
 }
 ```
 

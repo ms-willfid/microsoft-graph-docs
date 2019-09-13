@@ -176,12 +176,12 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
-    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
-    "allowExternalSenders": false,
-    "autoSubscribeNewMembers": false,
-    "isSubscribedByMail": false,
-    "unseenCount": 0
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+  "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+  "allowExternalSenders": false,
+  "autoSubscribeNewMembers": false,
+  "isSubscribedByMail": false,
+  "unseenCount": 0
 }
 ```
 

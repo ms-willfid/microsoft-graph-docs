@@ -197,7 +197,7 @@ The following is a JSON representation of the resource.
     "settings",
     "sites",
     "threads",
-
+    "isAssignableToRole",
     "allowExternalSenders",
     "assignedLicenses",
     "autoSubscribeNewMembers",
@@ -317,6 +317,7 @@ The following is a JSON representation of the resource.
   "id": "string (identifier)",
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
+  "isAssignableToRole": false,
   "mail": "string",
   "mailEnabled": true,
   "mailNickname": "string",

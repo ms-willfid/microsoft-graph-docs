@@ -208,7 +208,8 @@ The following is a JSON representation of the resource
     "licenseProcessingState",
     "unseenConversationsCount",
     "unseenCount",
-    "unseenMessagesCount"
+    "unseenMessagesCount",
+    "isAssignableToRole"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group"
@@ -231,6 +232,7 @@ The following is a JSON representation of the resource
   "isFavorite": true,
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
+  "isAssignableToRole": false,
   "mail": "string",
   "mailEnabled": true,
   "mailNickname": "string",

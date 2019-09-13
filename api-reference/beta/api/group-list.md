@@ -88,7 +88,6 @@ GET https://graph.microsoft.com/beta/groups
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -106,79 +105,77 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
-    "value": [
-         {
-            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-            "deletedDateTime": null,
-            "classification": null,
-            "createdDateTime": "2018-12-22T02:21:05Z",
-            "description": "Self help community for golf",
-            "displayName": "Golf Assist",
-            "expirationDateTime": null,
-            "groupTypes": [
-                "Unified"
-            ],
-            "isAssignableToRole": null,
-            "mail": "golfassist@contoso.com",
-            "mailEnabled": true,
-            "mailNickname": "golfassist",
-            "membershipRule": null,
-            "membershipRuleProcessingState": null,
-            "onPremisesLastSyncDateTime": null,
-            "onPremisesSecurityIdentifier": null,
-            "onPremisesSyncEnabled": null,
-            "preferredDataLocation": "CAN",
-            "preferredLanguage": null,
-            "proxyAddresses": [
-                "smtp:golfassist@contoso.onmicrosoft.com",
-                "SMTP:golfassist@contoso.com"
-            ],
-            "renewedDateTime": "2018-12-22T02:21:05Z",
-            "resourceBehaviorOptions": [],
-            "resourceProvisioningOptions": [],
-            "securityEnabled": false,
-            "theme": null,
-            "visibility": "Public",
-            "onPremisesProvisioningErrors": []
-        },
-        {
-            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
-            "deletedDateTime": null,
-            "classification": null,
-            "createdDateTime": "2018-11-19T20:29:40Z",
-            "description": "Talk about golf",
-            "displayName": "Golf Discussion",
-            "expirationDateTime": null,
-            "groupTypes": [],
-            "isAssignableToRole": null,
-            "mail": "golftalk@contoso.com",
-            "mailEnabled": true,
-            "mailNickname": "golftalk",
-            "membershipRule": null,
-            "membershipRuleProcessingState": null,
-            "onPremisesLastSyncDateTime": null,
-            "onPremisesSecurityIdentifier": null,
-            "onPremisesSyncEnabled": null,
-            "preferredDataLocation": "CAN",
-            "preferredLanguage": null,
-            "proxyAddresses": [
-                "smtp:golftalk@contoso.onmicrosoft.com",
-                "SMTP:golftalk@contoso.com"
-            ],
-            "renewedDateTime": "2018-11-19T20:29:40Z",
-            "resourceBehaviorOptions": [],
-            "resourceProvisioningOptions": [],
-            "securityEnabled": false,
-            "theme": null,
-            "visibility": null,
-            "onPremisesProvisioningErrors": []
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups",
+  "value": [
+    {
+      "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-12-22T02:21:05Z",
+      "description": "Self help community for golf",
+      "displayName": "Golf Assist",
+      "expirationDateTime": null,
+      "groupTypes": [
+        "Unified"
+      ],
+      "isAssignableToRole": null,
+      "mail": "golfassist@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "golfassist",
+      "membershipRule": null,
+      "membershipRuleProcessingState": null,
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",
+      "preferredLanguage": null,
+      "proxyAddresses": [
+        "smtp:golfassist@contoso.onmicrosoft.com",
+        "SMTP:golfassist@contoso.com"
+      ],
+      "renewedDateTime": "2018-12-22T02:21:05Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "theme": null,
+      "visibility": "Public",
+      "onPremisesProvisioningErrors": []
+    },
+    {
+      "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-11-19T20:29:40Z",
+      "description": "Talk about golf",
+      "displayName": "Golf Discussion",
+      "expirationDateTime": null,
+      "groupTypes": [],
+      "isAssignableToRole": null,
+      "mail": "golftalk@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "golftalk",
+      "membershipRule": null,
+      "membershipRuleProcessingState": null,
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",
+      "preferredLanguage": null,
+      "proxyAddresses": [
+        "smtp:golftalk@contoso.onmicrosoft.com",
+        "SMTP:golftalk@contoso.com"
+      ],
+      "renewedDateTime": "2018-11-19T20:29:40Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "theme": null,
+      "visibility": null,
+      "onPremisesProvisioningErrors": []
+    }
+  ]
 }
-
 ```
-
 
 ### Example 2: Return a filtered list of group objects 
 
@@ -225,20 +222,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName)",
-    "value": [
-        {
-            "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
-            "displayName": "Library Assist"
-        },
-        {
-            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-            "displayName": "Golf Assist"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,displayName)",
+  "value": [
+    {
+      "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+      "displayName": "Library Assist"
+    },
+    {
+      "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+      "displayName": "Golf Assist"
+    }
+  ]
 }
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

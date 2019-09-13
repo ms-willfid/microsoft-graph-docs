@@ -107,71 +107,69 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
-    "value": [
-        {
-            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-            "deletedDateTime": null,
-            "classification": null,
-            "createdDateTime": "2018-12-22T02:21:05Z",
-            "creationOptions": [],
-            "description": "Self help community for golf",
-            "displayName": "Golf Assist",
-            "groupTypes": [
-                "Unified"
-            ],
-            "isAssignableToRole": null,
-            "mail": "golfassist@contoso.com",
-            "mailEnabled": true,
-            "mailNickname": "golfassist",
-            "onPremisesLastSyncDateTime": null,
-            "onPremisesSecurityIdentifier": null,
-            "onPremisesSyncEnabled": null,
-            "preferredDataLocation": "CAN",
-            "proxyAddresses": [
-                "smtp:golfassist@contoso.onmicrosoft.com",
-                "SMTP:golfassist@contoso.com"
-            ],
-            "renewedDateTime": "2018-12-22T02:21:05Z",
-            "resourceBehaviorOptions": [],
-            "resourceProvisioningOptions": [],
-            "securityEnabled": false,
-            "visibility": "Public",
-            "onPremisesProvisioningErrors": []
-        },
-        {
-            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
-            "deletedDateTime": null,
-            "classification": null,
-            "createdDateTime": "2018-11-19T20:29:40Z",
-            "creationOptions": [],
-            "description": "Talk about golf",
-            "displayName": "Golf Discussion",
-            "groupTypes": [],
-            "isAssignableToRole": null,
-            "mail": "golftalk@contoso.com",
-            "mailEnabled": true,
-            "mailNickname": "golftalk",
-            "onPremisesLastSyncDateTime": null,
-            "onPremisesSecurityIdentifier": null,
-            "onPremisesSyncEnabled": null,
-            "preferredDataLocation": "CAN",
-            "proxyAddresses": [
-                "smtp:golftalk@contoso.onmicrosoft.com",
-                "SMTP:golftalk@contoso.com"
-            ],
-            "renewedDateTime": "2018-11-19T20:29:40Z",
-            "resourceBehaviorOptions": [],
-            "resourceProvisioningOptions": [],
-            "securityEnabled": false,
-            "visibility": null,
-            "onPremisesProvisioningErrors": []
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+  "value": [
+    {
+      "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-12-22T02:21:05Z",
+      "creationOptions": [],
+      "description": "Self help community for golf",
+      "displayName": "Golf Assist",
+      "groupTypes": [
+        "Unified"
+      ],
+      "isAssignableToRole": null,
+      "mail": "golfassist@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "golfassist",
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",\
+      "proxyAddresses": [
+        "smtp:golfassist@contoso.onmicrosoft.com",
+        "SMTP:golfassist@contoso.com"
+      ],
+      "renewedDateTime": "2018-12-22T02:21:05Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "visibility": "Public",
+      "onPremisesProvisioningErrors": []
+    },
+    {
+      "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-11-19T20:29:40Z",
+      "creationOptions": [],
+      "description": "Talk about golf",
+      "displayName": "Golf Discussion",
+      "groupTypes": [],
+      "isAssignableToRole": null,
+      "mail": "golftalk@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "golftalk",
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",
+      "proxyAddresses": [
+        "smtp:golftalk@contoso.onmicrosoft.com",
+        "SMTP:golftalk@contoso.com"
+      ],
+      "renewedDateTime": "2018-11-19T20:29:40Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "visibility": null,
+      "onPremisesProvisioningErrors": []
+    }
+  ]
 }
-
 ```
-
 
 ### Example 2: Return a filtered list of group objects
 
@@ -222,17 +220,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
-    "value": [
-        {
-            "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
-            "displayName": "Library Assist"
-        },
-        {
-            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-            "displayName": "Golf Assist"
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+  "value": [
+    {
+      "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+      "displayName": "Library Assist"
+    },
+    {
+      "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+      "displayName": "Golf Assist"
+    }
+  ]
 }
 ```
 
