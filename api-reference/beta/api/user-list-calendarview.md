@@ -74,8 +74,10 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
-## Example
-##### Request
+## Examples
+
+### Example 1
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -104,7 +106,54 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19
 
 ---
 
-##### Response
+#### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 354
+
+{
+  "value": [
+    {
+      "originalStartTimeZone": "originalStartTimeZone-value",
+      "originalEndTimeZone": "originalEndTimeZone-value",
+      "responseStatus": {
+        "response": "",
+        "time": "2016-10-19T10:37:00Z"
+      },
+      "uid": "iCalUId-value",
+      "reminderMinutesBeforeStart": 99,
+      "isReminderOn": true
+    }
+  ]
+}
+```
+
+
+### Example 2
+#### Request
+
+The following example shows the usage of the Prefer header
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "user_get_calendarview"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2016-01-01T19:00:00.0000000&endDateTime=2016-10-01T19:00:00.0000000
+```
+
+---
+
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
