@@ -51,6 +51,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
 | owners | string collection | This property represents the owners for the group at creation time. Optional. |
 | members | string collection | This property represents the members for the group at creation time. Optional. |
+| proxyAddresses | string collection | Email addresses for the group that direct to the same group mailbox. Optional. Requires Global Administrator role. |
 
 > **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
@@ -97,7 +98,8 @@ Content-length: 244
   ],
   "mailEnabled": true,
   "mailNickname": "library",
-  "securityEnabled": false
+  "securityEnabled": false,
+  "proxyAddresses": ["SMTP:library@contoso.com"]
 }
 ```
 # [C#](#tab/csharp)
