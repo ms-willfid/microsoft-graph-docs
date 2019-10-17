@@ -108,16 +108,16 @@ The `clientState` field is optional.
 
 The following are valid values for the resource property of the subscription:
 
-| Resource type | Examples |
+| Resource type | Examples | ChangeType Supported
 |:------ |:----- |
-|Mail|me/mailfolders('inbox')/messages<br />me/messages|
-|Contacts|me/contacts|
-|Calendars|me/events|
-|Users|users|
-|Groups|groups|
-|Conversations|groups('*{id}*')/conversations|
-|Drives|me/drive/root|
-|Security alert|security/alerts?$filter=status eq ‘New’|
+|Mail|me/mailfolders('inbox')/messages<br />me/messages|Created,Updated,Deleted
+|Contacts|me/contacts|Created,Updated,Deleted
+|Calendars|me/events|Created,Updated,Deleted
+|Users|users|Updated,Deleted
+|Groups|groups|Updated,Deleted
+|Conversations|groups('*{id}*')/conversations|Created,Updated,Deleted
+|Drives|me/drive/root|Updated,Deleted
+|Security alert|security/alerts?$filter=status eq New|updated
 
 ##### Response
 
